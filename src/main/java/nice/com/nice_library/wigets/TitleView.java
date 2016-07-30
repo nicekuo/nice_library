@@ -2,6 +2,7 @@ package nice.com.nice_library.wigets;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.util.AttributeSet;
@@ -22,6 +23,7 @@ public class TitleView extends FrameLayout {
     public TextView mRightBtn;
     public ImageView title_right_image;
     public TextView mTitle;
+    private View title_layout;
 
     private OnClickListener mOnLeftButtonClickListener;
     private OnClickListener mOnRightButtonClickListener;
@@ -53,6 +55,7 @@ public class TitleView extends FrameLayout {
         mLeftBtn = (ImageView) view.findViewById(R.id.title_left_btn);
         title_right_image = (ImageView) findViewById(R.id.title_right_image);
         cartMenuItem = (ViewCartMenuItem) findViewById(R.id.cart);
+        title_layout = findViewById(R.id.title_layout);
         cartMenuItem.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +110,10 @@ public class TitleView extends FrameLayout {
 
     public void setTitleName(int stringID) {
         setTitleName(res.getString(stringID));
+    }
+
+    public void setBackGroundColor(int color){
+        title_layout.setBackgroundColor(color);
     }
 
     public void setTitleLeftImageButton(int imgID, OnClickListener listener) {

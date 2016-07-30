@@ -56,6 +56,8 @@
 	<color name="common_red">#ff6666</color>
 	<color name="blue">#33c8ca</color>
 
+	<color name="dark_gray">#545D70</color>
+
 	<color name="black_10">#19000000</color>
 	<color name="black_50">#80000000</color>
 	<color name="black_80">#cc000000</color>
