@@ -12,11 +12,11 @@ public class ViewContainer extends ViewGroup {
     /*一共几列*/
     public int columns = 2;
     /*是否有分割线，0为没有，1为有分割线，分割线只是子View连接之间的分割线，上下左右边线用padding就好*/
-    public int hasDivider = 0;
+    public int hasDivider = 1;
     /*分割线的宽度*/
-    public int dividerWid = 0;
+    public int dividerWid = 10;
     /*分割线的颜色*/
-    public int dividerColor = Color.parseColor("#666666");
+    public int dividerColor = Color.parseColor("#999999");
 
     public ViewContainer(Context context) {
         super(context);
